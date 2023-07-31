@@ -12,7 +12,7 @@ const axiosWrapper = {};
 const queryStringBuilder = query => Object.keys(query).length ? '?' + Object.keys(query).map(k => `${k}=${query[k]}`).join('&') : '';
 
 const instance = axios.create({
-  baseURL: process.env.API_URL
+  baseURL: "https://boarcampapi.onrender.com"
 });
 
 for (const method of methods) {
